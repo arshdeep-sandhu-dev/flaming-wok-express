@@ -136,11 +136,11 @@ export default function FullMenu() {
           {menuData[activeTab].items.map((item) => (
             <div
               key={item.name}
-              className="flex flex-col py-4 border-b border-border-custom last:border-b-0"
+              className="group flex flex-col py-4 px-3 -mx-3 rounded-lg border-b border-border-custom last:border-b-0 transition-all duration-300 ease-out hover:bg-card/60 hover:translate-x-1 hover:border-transparent hover:shadow-[0_0_30px_8px_rgba(245,98,30,0.18)] cursor-default"
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <h3 className="text-text-primary font-semibold text-lg">
+                  <h3 className="text-text-primary font-semibold text-lg transition-colors duration-300 group-hover:text-flame-orange">
                     {item.name}
                   </h3>
                   {item.spicy && (
